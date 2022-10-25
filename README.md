@@ -1,2 +1,3 @@
-# Make-Your-Burguer
+# Make your burguer
+
 Sistema de pedidos de hamburguers utilizando VueJS
