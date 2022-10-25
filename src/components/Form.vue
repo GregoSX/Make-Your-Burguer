@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>Componente de mensagem</p>
-        <form id="form-create">
+        <form id="form-create" @submit="createBurguer">
             <div class="input-container">
                 <label for="name">Client name</label>
                 <input type="text" id="name" name="name" placeholder="Type your name" v-model="name" >
@@ -50,7 +50,6 @@
                 bread: null,
                 meat: null,
                 options: [],
-                status: 'Requested',
                 msg: null
             }
         },
@@ -64,6 +63,33 @@
                 this.meatData = data.carnes
                 this.optionsData = data.opcionais
 
+            },
+            async createBurguer(e) {
+                e.preventDefault();
+
+                const data = {
+                    name: this.name,
+                    bread: this.bread,
+                    meat: this.meat,
+                    options: Array.from(this.options),
+                    status: "Requested"
+                }
+
+                const dataJSON = JSON.stringify(data)
+
+                const req = await fetch("http://localhost:3000/burgers", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json" },
+                    body: dataJSON
+                })
+
+                const res = await req.json()
+
+
+                this.bread = ""
+                this.meat = ""
+                this.name = ""
+                this.options = ""
             }
         },
         mounted() {
