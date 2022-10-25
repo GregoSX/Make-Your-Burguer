@@ -81,16 +81,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "name": "gre",
-      "bread": "Pão mexicano",
-      "meat": "Veggie burger",
-      "options": [
-        "Pepino"
-      ],
-      "status": "Requested",
-      "id": 1
-    }
-  ]
+  "burgers": []
 }
