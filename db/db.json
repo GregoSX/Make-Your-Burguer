@@ -81,5 +81,28 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "name": "Guilherme Grego Santos",
+      "bread": "Italiano Branco",
+      "meat": "Alcatra",
+      "options": [
+        "Bacon",
+        "Cheddar"
+      ],
+      "status": "Requested",
+      "id": 1
+    },
+    {
+      "name": "Mae",
+      "bread": "Integral",
+      "meat": "Veggie burger",
+      "options": [
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "Requested",
+      "id": 2
+    }
+  ]
 }
