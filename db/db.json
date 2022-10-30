@@ -84,24 +84,13 @@
   "burgers": [
     {
       "name": "gui",
-      "bread": "Italiano Branco",
-      "meat": "Picanha",
+      "bread": "Parmesão e Orégano",
+      "meat": "Alcatra",
       "options": [
-        "Bacon"
+        "Salame"
       ],
       "status": "Requested",
-      "id": 2
-    },
-    {
-      "name": "gre",
-      "bread": "Parmesão e Orégano",
-      "meat": "Maminha",
-      "options": [
-        "Bacon",
-        "Pepino"
-      ],
-      "status": "In production",
-      "id": 5
+      "id": 1
     }
   ]
 }

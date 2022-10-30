@@ -1,5 +1,8 @@
 <template>
-    <div id="burguer-table">
+    <div v-if="!haverOrdes">
+        <p id="message">There are no orders registered</p>
+    </div>
+    <div id="burguer-table" v-else>
         <Message :msg="msg" v-show="msg"/>
         <div>
             <div id="burguer-table-heading">
@@ -45,7 +48,8 @@
                 burgers: null,
                 burgers_id: null,
                 status: [],
-                msg: null
+                msg: null,
+                haverOrdes: false
             }
         },
         components: {
@@ -57,9 +61,15 @@
 
                 const data = await req.json()
 
-                this.burgers = data
-
-                this.getStatus() 
+                if(data.length === 0) {
+                    this.haverOrdes = false
+                }
+                else {
+                    this.haverOrdes = true
+                    this.burgers = data
+                    this.getStatus() 
+                }
+                
             },
             async getStatus() {
                 const req = await fetch ("http://localhost:3000/status")
@@ -104,6 +114,18 @@
 </script>
 
 <style scoped>
+    #message {
+        font-weight: bold;
+        text-align: center;
+        color: #363636;
+        background-color: #A9A9A9;
+        border: 2px solid #4F4F4F;
+        border-radius: 5px;
+        padding: 8px;
+        max-width: 400px;
+        margin: 56px auto;
+    }
+
     #burguer-table {
         max-width: 1200px;
         margin: 0 auto;
