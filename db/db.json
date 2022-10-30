@@ -81,16 +81,5 @@
       "tipo": "Finished"
     }
   ],
-  "burgers": [
-    {
-      "name": "gui",
-      "bread": "Parmesão e Orégano",
-      "meat": "Alcatra",
-      "options": [
-        "Salame"
-      ],
-      "status": "Requested",
-      "id": 1
-    }
-  ]
+  "burgers": []
 }
