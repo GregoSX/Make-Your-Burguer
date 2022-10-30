@@ -83,25 +83,14 @@
   ],
   "burgers": [
     {
-      "name": "Guilherme Grego Santos",
-      "bread": "Italiano Branco",
+      "name": "pai",
+      "bread": "3 Queijos",
       "meat": "Alcatra",
       "options": [
-        "Bacon",
-        "Cheddar"
+        "Salame",
+        "Cebola roxa"
       ],
-      "status": "Requested",
-      "id": 1
-    },
-    {
-      "name": "Mae",
-      "bread": "Integral",
-      "meat": "Veggie burger",
-      "options": [
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Requested",
+      "status": "In production",
       "id": 2
     }
   ]
