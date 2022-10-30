@@ -70,15 +70,15 @@
   "status": [
     {
       "id": 1,
-      "tipo": "Solicitado"
+      "tipo": "Requested"
     },
     {
       "id": 2,
-      "tipo": "Em produção"
+      "tipo": "In production"
     },
     {
       "id": 3,
-      "tipo": "Finalizado"
+      "tipo": "Finished"
     }
   ],
   "burgers": [
