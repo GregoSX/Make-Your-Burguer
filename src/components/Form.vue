@@ -90,7 +90,7 @@
 
                 const res = await req.json()
 
-                this.msg = `Pedido nº ${res.id} realizado com sucesso!`
+                this.msg = `Order number ${res.id} succssesfully placed!`
                 setTimeout(() => this.msg = "", 3000)
 
                 this.bread = ""

@@ -83,15 +83,15 @@
   ],
   "burgers": [
     {
-      "name": "pai",
+      "name": "Mae",
       "bread": "3 Queijos",
       "meat": "Alcatra",
       "options": [
-        "Salame",
-        "Cebola roxa"
+        "Bacon",
+        "Salame"
       ],
-      "status": "In production",
-      "id": 2
+      "status": "Finished",
+      "id": 1
     }
   ]
 }

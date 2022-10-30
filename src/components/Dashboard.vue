@@ -1,5 +1,6 @@
 <template>
     <div id="burguer-table">
+        <Message :msg="msg" v-show="msg"/>
         <div>
             <div id="burguer-table-heading">
                 <div class="order-id">#:</div>
@@ -35,14 +36,20 @@
 
 
 <script> 
+    import Message from './Message.vue'
+
     export default {
         name: 'Dashboard',
         data() {
             return {
                 burgers: null,
                 burgers_id: null,
-                status: []
+                status: [],
+                msg: null
             }
+        },
+        components: {
+            Message
         },
         methods: {
             async getPedidos() {
@@ -68,6 +75,9 @@
 
                 const res = req.json()
 
+                this.msg = ` Order number ${id} canceled successfully!`
+                setTimeout(() => this.msg = "", 3000)
+
                 this.getPedidos()
             },
             async updateBurger(event, id) {
@@ -82,6 +92,9 @@
                 })
 
                 const res = await req.json()
+
+                this.msg = `Order número ${res.id} has been updated to ${res.status}`
+                setTimeout(() => this.msg = "", 3000)
             }
         },
         mounted() {
