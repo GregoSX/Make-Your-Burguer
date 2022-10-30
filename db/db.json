@@ -83,15 +83,25 @@
   ],
   "burgers": [
     {
-      "name": "Mae",
-      "bread": "3 Queijos",
-      "meat": "Alcatra",
+      "name": "gui",
+      "bread": "Italiano Branco",
+      "meat": "Picanha",
+      "options": [
+        "Bacon"
+      ],
+      "status": "Requested",
+      "id": 2
+    },
+    {
+      "name": "gre",
+      "bread": "Parmesão e Orégano",
+      "meat": "Maminha",
       "options": [
         "Bacon",
-        "Salame"
+        "Pepino"
       ],
-      "status": "Finished",
-      "id": 1
+      "status": "In production",
+      "id": 5
     }
   ]
 }

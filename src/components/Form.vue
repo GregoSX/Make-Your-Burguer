@@ -96,7 +96,7 @@
                 this.bread = ""
                 this.meat = ""
                 this.name = ""
-                this.options = ""
+                this.options = []
             }
         },
         mounted() {
